@@ -14,7 +14,7 @@
 //
 // Note: the tests should not be changed
 //
-// Execute `rustlings hint box1` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint box1` for hints :)
 
 // I AM NOT DONE
 

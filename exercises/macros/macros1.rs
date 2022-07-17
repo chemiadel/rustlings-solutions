@@ -1,5 +1,5 @@
 // macros1.rs
-// Execute `rustlings hint macros1` or use the `hint` watch subcommand for a hint.
+// Make me compile! Execute `rustlings hint macros1` for hints :)
 
 // I AM NOT DONE
 

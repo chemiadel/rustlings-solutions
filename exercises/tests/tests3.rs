@@ -2,7 +2,7 @@
 // This test isn't testing our function -- make it do that in such a way that
 // the test passes. Then write a second test that tests whether we get the result
 // we expect to get when we call `is_even(5)`.
-// Execute `rustlings hint tests3` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint tests3` for hints :)
 
 // I AM NOT DONE
 

@@ -1,10 +1,8 @@
 // functions3.rs
-// Execute `rustlings hint functions3` or use the `hint` watch subcommand for a hint.
-
-// I AM NOT DONE
+// Make me compile! Execute `rustlings hint functions3` for hints :)
 
 fn main() {
-    call_me();
+    call_me(4);
 }
 
 fn call_me(num: u32) {

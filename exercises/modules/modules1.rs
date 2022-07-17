@@ -1,5 +1,5 @@
 // modules1.rs
-// Execute `rustlings hint modules1` or use the `hint` watch subcommand for a hint.
+// Make me compile! Execute `rustlings hint modules1` for hints :)
 
 // I AM NOT DONE
 
