@@ -14,8 +14,6 @@
 
 // Execute `rustlings hint hashmaps3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 use std::collections::HashMap;
 
 // A structure to store team name and its goal details.
@@ -40,6 +38,54 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         // will be number of goals conceded from team_2, and similarly
         // goals scored by team_2 will be the number of goals conceded by
         // team_1.
+
+        if scores.contains_key(&team_1_name) {
+            let new_team_1_name = (&team_1_name).to_string();
+            let new_goals_scored = scores[&team_1_name].goals_scored + team_1_score;
+            let new_goals_conceded = scores[&team_1_name].goals_conceded + team_2_score;
+
+            scores.insert(
+                new_team_1_name.to_owned(),
+                Team {
+                    name: new_team_1_name.to_owned(),
+                    goals_scored: new_goals_scored,
+                    goals_conceded: new_goals_conceded,
+                },
+            );
+        } else {
+            scores.insert(
+                team_1_name.to_owned(),
+                Team {
+                    name: team_1_name,
+                    goals_scored: team_1_score,
+                    goals_conceded: team_2_score,
+                },
+            );
+        }
+
+        if scores.contains_key(&team_2_name) {
+            let new_team_2_name = (&team_2_name).to_string();
+            let new_goals_scored = scores[&team_2_name].goals_scored + team_2_score;
+            let new_goals_conceded = scores[&team_2_name].goals_conceded + team_1_score;
+
+            scores.insert(
+                new_team_2_name.to_owned(),
+                Team {
+                    name: new_team_2_name.to_owned(),
+                    goals_scored: new_goals_scored,
+                    goals_conceded: new_goals_conceded,
+                },
+            );
+        } else {
+            scores.insert(
+                team_2_name.to_owned(),
+                Team {
+                    name: team_2_name.to_owned(),
+                    goals_scored: team_2_score,
+                    goals_conceded: team_1_score,
+                },
+            );
+        }
     }
     scores
 }
